@@ -6,7 +6,7 @@ module.exports = {
         .setName("ping")
         .setDescription("Pings the bot and shows latency"),
     async execute(interaction) {
-       interaction.reply(`Pong!! Your ping is **${Math.round(interaction.client.ws.ping)}ms**.`);
+       interaction.reply(`Pong! Your ping is **${Math.round(interaction.client.ws.ping)}ms**.`);
     }
 }
 
