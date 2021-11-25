@@ -1,0 +1,19 @@
+const { SlashCommandBuilder } = require("@discordjs/builders");
+
+module.exports = {
+    data: new SlashCommandBuilder()
+        .setName("name") // Command name
+        .setDescription("description")     // Command description
+        .addStringOption((option) => // Adds an argument
+            option 
+                .setName("name") // Argument name
+                .setDescription("description") // Argument description
+                .setRequired(true), // Argument requirement
+        ),
+    async execute(interaction) {
+        interaction.reply({
+            content: interaction.options.getString("name"),
+            ephemeral: false
+        });
+    }
+}
