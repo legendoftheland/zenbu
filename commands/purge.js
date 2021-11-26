@@ -15,7 +15,7 @@ module.exports = {
     async execute(interaction) {
         if (interaction.member.permissions.has("MANAGE_MESSAGES")) {
             await interaction.channel.bulkDelete(interaction.options.getNumber("number"));
-            const msg = await interaction.reply(`Deleted ${interaction.options.getNumber("number")} message(s) successfully.`);
+            const msg =  interaction.reply(`Deleted ${interaction.options.getNumber("number")} message(s) successfully.`);
             setTimeout(() => {  msg.delete()
                 .then(msg => console.log(`Deleted message from ${msg.author.username}`))
                 .catch(console.error);
