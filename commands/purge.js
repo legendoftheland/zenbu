@@ -14,9 +14,9 @@ module.exports = {
         ),
     async execute(interaction) {
         if (interaction.member.permissions.has("MANAGE_MESSAGES")) {
-            interaction.channel.bulkDelete(interaction.options.getNumber("number"));
-            const msg = interaction.reply(`Deleted ${interaction.options.getNumber("number")} messages successfully.`);
-            msg.delete();
+            await interaction.channel.bulkDelete(interaction.options.getNumber("number"));
+            const msg = await interaction.reply(`Deleted ${interaction.options.getNumber("number")} messages successfully.`);
+            setTimeout(() => {  msg.delete(); }, 5000);
         } else {
             interaction.reply("You do not have the **Manage Messages** permission. Please ask a moderator to give you this permission.")
         }
