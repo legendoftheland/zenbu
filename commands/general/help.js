@@ -11,7 +11,6 @@ module.exports = {
         const helpEmbed = new MessageEmbed()
             .setColor("#3AA1FF")
             .setTitle("Help")
-            .setAuthor(interaction.client.user.username, interaction.client.user.avatarURL())
             .setDescription("Get help for Zenbu commands!")
             .addFields(
                 {name: "help", value: "Opens this message! Get help for Zenbu commands."},
