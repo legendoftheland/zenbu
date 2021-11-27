@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { Message } = require("discord.js");
-const client = require("../../src/bot");
+const client = require("../../src/bot.js");
 
 
 module.exports = {

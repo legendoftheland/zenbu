@@ -14,9 +14,10 @@ const client = new Client({
     ]
 });
 
+// Credit to the creators of MaxiGames for these lines of code that register the commands. 
+
 const commandFiles = fs
     .readdirSync(`./commands`)
-//    .filter(file => file.endsWith(".js"))
     .map((file) => path.join("./commands", file))
     .filter((file) => fs.lstatSync(file).isDirectory())
     .map((dir) => fs
@@ -40,12 +41,6 @@ for (const filecol of commandFiles) {
 	}
 }
 
-
-//for (const file of commandFiles) {
-//    const command = require(`../commands/${file}`);
-//    commands.push(command.data.toJSON());
-//    client.commands.set(command.data.name, command);
-//}
 
 
 
