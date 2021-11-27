@@ -2,6 +2,7 @@
 require('dotenv').config();
 
 const fs = require("fs");
+const path = require("path");
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord-api-types/v9");
 const { Client, Intents, Collection } = require('discord.js');
@@ -13,18 +14,39 @@ const client = new Client({
     ]
 });
 
-const commandFiles = fs.readdirSync(`./commands`).filter(file => file.endsWith(".js"));
+const commandFiles = fs
+    .readdirSync(`./commands`)
+//    .filter(file => file.endsWith(".js"))
+    .map((file) => path.join("./commands", file))
+    .filter((file) => fs.lstatSync(file).isDirectory())
+    .map((dir) => fs
+        .readdirSync(dir)
+        .filter((file) => file.endsWith(".js"))
+        .map((file) => path.join(dir, file))
+    );
+console.log(commandFiles)
+
 
 const commands = [];
 
 client.commands = new Collection();
 
-
-for (const file of commandFiles) {
-    const command = require(`../commands/${file}`);
-    commands.push(command.data.toJSON());
-    client.commands.set(command.data.name, command);
+for (const filecol of commandFiles) {
+	for (const name of filecol) {
+		const command = require(`../${name}`);
+		commands.push(command.data.toJSON());
+        client.commands.set(command.data.name, command);
+		console.log(`Registered ${name}.`);
+	}
 }
+
+
+//for (const file of commandFiles) {
+//    const command = require(`../commands/${file}`);
+//    commands.push(command.data.toJSON());
+//    client.commands.set(command.data.name, command);
+//}
+
 
 
 client.once('ready', () => {
@@ -32,7 +54,7 @@ client.once('ready', () => {
     const CLIENT_ID = client.user.id;
     const rest = new REST({
         version: 9
-    }).setToken(process.env.ZENBU_BOT_TOKEN);
+    }).setToken(process.env.BOT_TOKEN);
 
     (async () => {
         try {
@@ -72,6 +94,6 @@ client.on("interactionCreate", async interaction => {
     }
 });
 
-client.login(process.env.ZENBU_BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
 
 module.exports = client;
