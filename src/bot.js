@@ -6,6 +6,9 @@ const path = require("path");
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord-api-types/v9");
 const { Client, Intents, Collection } = require('discord.js');
+const { MessageEmbed } = require("discord.js")
+
+const mongoose = require('../database/mongoose.js')
 
 const client = new Client({
     intents: [
@@ -44,7 +47,8 @@ for (const filecol of commandFiles) {
 
 
 
-client.once('ready', () => {
+client.once('ready', async () => {
+    client.user.setActivity({name: 'for slash commands', type: 'WATCHING'});
     console.log(`Logged in as ${client.user.tag}.`);
     const CLIENT_ID = client.user.id;
     const rest = new REST({
@@ -68,6 +72,7 @@ client.once('ready', () => {
             if (err) console.error(err);
         }
     })();
+    
 });
 
 client.on("interactionCreate", async interaction => {
@@ -82,13 +87,21 @@ client.on("interactionCreate", async interaction => {
     } catch(err) {
         if (err) console.error(err);
 
+        // EMBEDS
+        const errorEmbed = new MessageEmbed()
+            .setColor("#FF5757")
+            .setTitle("An error occurred")
+            .setDescription("I encountered an error whilst trying to execute that command. Please try again later.\n\
+            If this problem persists, please join my support server and contact the support team.");
+
         await interaction.reply({
-            content: "An error occurred while executing that command.",
+            embeds: [errorEmbed],
             ephemeral: true
         });
     }
 });
 
+mongoose.init();
 client.login(process.env.BOT_TOKEN);
 
 module.exports = client;
