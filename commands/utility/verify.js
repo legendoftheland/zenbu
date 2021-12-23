@@ -9,7 +9,7 @@ const client = require('../../src/bot.js')
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("verify") // Command name
-        .setDescription("Verify yourself! This command has to first be set up via the \"/setup verify\" command.")     // Command description
+        .setDescription("Verify yourself (Must be set up via the \"/setup verify\" command by server admins)")     // Command description
         .addStringOption((option) => // Adds an argument
             option 
                 .setName("email") // Argument name
@@ -22,7 +22,7 @@ module.exports = {
             from: 'Zenbu Verification <zenbudiscordbot@gmail.com>',
             to: `${interaction.options.getString("email")}`,
             subject: `Verification code for ${interaction.guild.name}: ${verificationCode}`,
-            text: `Your verification code for ${interaction.guild.name} is ${verificationCode}. Please send this to Zenbu via ${interaction.guild.name}. If you are not ${interaction.member.user.tag}, and/or did not request this code with /verify, you can safely ignore this email.`
+            text: `Your verification code for ${interaction.guild.name} is ${verificationCode}. Please DM this to Zenbu. If you are not ${interaction.member.user.tag}, and/or did not request this code with /verify, you can safely ignore this email.`
         };
 
         transporter.sendMail(mailOptions, function(error, info){
@@ -33,8 +33,7 @@ module.exports = {
             }
         });
 
-        var emailArray = interaction.options.getString('email').split("@");
-        var domain = emailArray[1];
+        var domain = interaction.options.getString('email').split("@")[1];
 
         // if (domain === )
             // EMBEDS
