@@ -1,0 +1,667 @@
+{
+    "meta": { "status": 200 },
+    "data": [
+        {
+            "slug": "美術",
+            "is_common": true,
+            "tags": ["wanikani14"],
+            "jlpt": ["jlpt-n1"],
+            "japanese": [{ "word": "美術", "reading": "びじゅつ" }],
+            "senses": [
+                {
+                    "english_definitions": ["art", "fine arts"],
+                    "parts_of_speech": ["Noun", "Noun which may take the genitive case particle 'no'"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "芸術",
+            "is_common": true,
+            "tags": ["wanikani14"],
+            "jlpt": ["jlpt-n3"],
+            "japanese": [
+                { "word": "芸術", "reading": "げいじゅつ" },
+                { "word": "藝術", "reading": "げいじゅつ" }
+            ],
+            "senses": [
+                {
+                    "english_definitions": ["(fine) art", "the arts"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["Art"],
+                    "parts_of_speech": ["Wikipedia definition"],
+                    "links": [
+                        { "text": "Read “Art” on English Wikipedia", "url": "http://en.wikipedia.org/wiki/Art?oldid=495365691" },
+                        { "text": "Read “芸術” on Japanese Wikipedia", "url": "http://ja.wikipedia.org/wiki/芸術?oldid=42636887" }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [],
+                    "sentences": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": "http://dbpedia.org/resource/Art" }
+        },
+        {
+            "slug": "芸",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                { "word": "芸", "reading": "げい" },
+                { "word": "藝", "reading": "げい" }
+            ],
+            "senses": [
+                {
+                    "english_definitions": ["art", "craft", "accomplishment", "artistic skill", "technique", "performance"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "術",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [{ "word": "術", "reading": "じゅつ" }],
+            "senses": [
+                {
+                    "english_definitions": ["art", "technique"],
+                    "parts_of_speech": ["Noun", "Noun, used as a suffix"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["means", "way"],
+                    "parts_of_speech": ["Noun", "Noun, used as a suffix"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["trick", "trap", "plot", "stratagem"],
+                    "parts_of_speech": ["Noun", "Noun, used as a suffix"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["magic"],
+                    "parts_of_speech": ["Noun", "Noun, used as a suffix"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "技",
+            "is_common": true,
+            "tags": ["wanikani14"],
+            "jlpt": ["jlpt-n1"],
+            "japanese": [
+                { "word": "技", "reading": "わざ" },
+                { "word": "技", "reading": "ぎ" },
+                { "word": "伎", "reading": "わざ" },
+                { "word": "伎", "reading": "ぎ" }
+            ],
+            "senses": [
+                {
+                    "english_definitions": ["technique", "art", "skill", "move"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "美術館",
+            "is_common": true,
+            "tags": ["wanikani16"],
+            "jlpt": ["jlpt-n4"],
+            "japanese": [{ "word": "美術館", "reading": "びじゅつかん" }],
+            "senses": [
+                {
+                    "english_definitions": ["art gallery", "art museum"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["Bijutsukan"],
+                    "parts_of_speech": ["Place"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["Art museum"],
+                    "parts_of_speech": ["Wikipedia definition"],
+                    "links": [
+                        { "text": "Read “Art museum” on English Wikipedia", "url": "http://en.wikipedia.org/wiki/Art_museum?oldid=494581597" },
+                        { "text": "Read “美術館” on Japanese Wikipedia", "url": "http://ja.wikipedia.org/wiki/美術館?oldid=42548201" }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [],
+                    "sentences": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": true, "dbpedia": "http://dbpedia.org/resource/Art_museum" }
+        },
+        {
+            "slug": "技術",
+            "is_common": true,
+            "tags": ["wanikani16"],
+            "jlpt": ["jlpt-n4"],
+            "japanese": [{ "word": "技術", "reading": "ぎじゅつ" }],
+            "senses": [
+                {
+                    "english_definitions": ["technology", "engineering"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["technique", "skill"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["art", "craft"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "一芸",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [{ "word": "一芸", "reading": "いちげい" }],
+            "senses": [
+                {
+                    "english_definitions": ["an art", "one talent"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "生け花",
+            "is_common": true,
+            "tags": [],
+            "jlpt": ["jlpt-n2"],
+            "japanese": [
+                { "word": "生け花", "reading": "いけばな" },
+                { "word": "生花", "reading": "いけばな" },
+                { "word": "活け花", "reading": "いけばな" },
+                { "word": "活花", "reading": "いけばな" },
+                { "word": "生花", "reading": "せいか" },
+                { "word": "活花", "reading": "せいか" }
+            ],
+            "senses": [
+                {
+                    "english_definitions": ["ikebana", "Japanese art of flower arrangement"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["fresh flower", "natural flower"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": ["せいか"],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["Seika"],
+                    "parts_of_speech": ["Place"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": true, "dbpedia": false }
+        },
+        {
+            "slug": "馬術",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [{ "word": "馬術", "reading": "ばじゅつ" }],
+            "senses": [
+                {
+                    "english_definitions": ["horsemanship", "equestrian art", "(art of) riding"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["Equestrianism"],
+                    "parts_of_speech": ["Wikipedia definition"],
+                    "links": [
+                        { "text": "Read “Equestrianism” on English Wikipedia", "url": "http://en.wikipedia.org/wiki/Equestrianism?oldid=495352959" },
+                        { "text": "Read “馬術” on Japanese Wikipedia", "url": "http://ja.wikipedia.org/wiki/馬術?oldid=42532969" }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [],
+                    "sentences": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": "http://dbpedia.org/resource/Equestrianism" }
+        },
+        {
+            "slug": "アート",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [{ "reading": "アート" }],
+            "senses": [
+                {
+                    "english_definitions": ["art"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "折り紙",
+            "is_common": true,
+            "tags": ["wanikani16"],
+            "jlpt": [],
+            "japanese": [
+                { "word": "折り紙", "reading": "おりがみ" },
+                { "word": "折紙", "reading": "おりがみ" }
+            ],
+            "senses": [
+                {
+                    "english_definitions": ["origami", "art of paper folding"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["hallmark", "certificate of authenticity"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["Origami"],
+                    "parts_of_speech": ["Wikipedia definition"],
+                    "links": [
+                        { "text": "Read “Origami” on English Wikipedia", "url": "http://en.wikipedia.org/wiki/Origami?oldid=495474894" },
+                        { "text": "Read “折り紙” on Japanese Wikipedia", "url": "http://ja.wikipedia.org/wiki/折り紙?oldid=42273572" }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [],
+                    "sentences": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": "http://dbpedia.org/resource/Origami" }
+        },
+        {
+            "slug": "陶芸",
+            "is_common": true,
+            "tags": ["wanikani49"],
+            "jlpt": [],
+            "japanese": [{ "word": "陶芸", "reading": "とうげい" }],
+            "senses": [
+                {
+                    "english_definitions": ["ceramic art", "ceramics"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["Pottery"],
+                    "parts_of_speech": ["Wikipedia definition"],
+                    "links": [
+                        { "text": "Read “Pottery” on English Wikipedia", "url": "http://en.wikipedia.org/wiki/Pottery?oldid=495062550" },
+                        { "text": "Read “陶芸” on Japanese Wikipedia", "url": "http://ja.wikipedia.org/wiki/陶芸?oldid=42550331" }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [],
+                    "sentences": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": "http://dbpedia.org/resource/Pottery" }
+        },
+        {
+            "slug": "神業",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                { "word": "神業", "reading": "かみわざ" },
+                { "word": "神業", "reading": "かむわざ" },
+                { "word": "神業", "reading": "かんわざ" },
+                { "word": "神事", "reading": "かみわざ" },
+                { "word": "神事", "reading": "かむわざ" },
+                { "word": "神事", "reading": "かんわざ" },
+                { "word": "神わざ", "reading": "かみわざ" },
+                { "word": "神わざ", "reading": "かむわざ" },
+                { "word": "神わざ", "reading": "かんわざ" }
+            ],
+            "senses": [
+                {
+                    "english_definitions": ["divine work", "miracle", "superhuman feat"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["Shinto ritual"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": ["Archaism"],
+                    "restrictions": [],
+                    "see_also": ["神事 しんじ"],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "剣道",
+            "is_common": true,
+            "tags": ["wanikani35"],
+            "jlpt": [],
+            "japanese": [{ "word": "剣道", "reading": "けんどう" }],
+            "senses": [
+                {
+                    "english_definitions": ["kendo", "Japanese martial art using bamboo swords"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["Kendo"],
+                    "parts_of_speech": ["Wikipedia definition"],
+                    "links": [
+                        { "text": "Read “Kendo” on English Wikipedia", "url": "http://en.wikipedia.org/wiki/Kendo?oldid=490801573" },
+                        { "text": "Read “剣道” on Japanese Wikipedia", "url": "http://ja.wikipedia.org/wiki/剣道?oldid=42739015" }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [],
+                    "sentences": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": "http://dbpedia.org/resource/Kendo" }
+        },
+        {
+            "slug": "人為",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [{ "word": "人為", "reading": "じんい" }],
+            "senses": [
+                {
+                    "english_definitions": ["human work", "human agency", "art", "artificiality"],
+                    "parts_of_speech": ["Noun", "Noun which may take the genitive case particle 'no'"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "画廊",
+            "is_common": true,
+            "tags": ["wanikani31"],
+            "jlpt": [],
+            "japanese": [{ "word": "画廊", "reading": "がろう" }],
+            "senses": [
+                {
+                    "english_definitions": ["art gallery (esp. artworks for sale)", "picture gallery"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": ["ギャラリー"],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "医",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [{ "word": "医", "reading": "い" }],
+            "senses": [
+                {
+                    "english_definitions": ["medicine", "the healing art", "healing", "curing"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": ["doctor"],
+                    "parts_of_speech": ["Noun", "Noun, used as a suffix"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "美術商",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [{ "word": "美術商", "reading": "びじゅつしょう" }],
+            "senses": [
+                {
+                    "english_definitions": ["art dealer", "fine art(s) shop"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        },
+        {
+            "slug": "美術展",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [{ "word": "美術展", "reading": "びじゅつてん" }],
+            "senses": [
+                {
+                    "english_definitions": ["art exhibition"],
+                    "parts_of_speech": ["Noun"],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ],
+            "attribution": { "jmdict": true, "jmnedict": false, "dbpedia": false }
+        }
+    ]
+}
