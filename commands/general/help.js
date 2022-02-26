@@ -2,22 +2,29 @@ const { SlashCommandBuilder } = require("@discordjs/builders");
 const { MessageEmbed } = require("discord.js")
 const client = require("../../src/bot.js");
 require('dotenv').config();
+const fs = require("fs");
+const path = require("path");
+const { size, i } = require("mathjs");
+const { MessageActionRow, MessageSelectMenu, MessageButton } = require('discord.js');
+
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("help") // Command name
-        .setDescription("Help for Zenbu commands"), // Command description
+        .setDescription("Shows help for Zenbu commands"), // Command description
+        
     async execute(interaction) {
+        const commandArray = require('../../global/commandArray.js')
         const helpEmbed = new MessageEmbed()
             .setColor("#3AA1FF")
             .setTitle("Help")
-            .setDescription("Get help for Zenbu commands!")
-            .addFields(
-                {name: "help", value: "Opens this message! Get help for Zenbu commands."},
-                {name: "ping", value: "Pings the bot and shows latency."},
-                {name: "purge", value: "Deletes a set number of messages (provided author has the Manage Messages permission)."}
-            )
-            .setFooter(`Version: ${process.env.VERSION}`);
+            for(let i = 0; i < commandArray.length; i++) {
+                helpEmbed.addFields(
+                    {name: `/${commandArray[i].name}`, value: `${commandArray[i].desc}`, inline: false}
+                )
+            }
+            helpEmbed.setFooter(`Version: ${process.env.VERSION}`);
+        
         interaction.reply({
             embeds: [helpEmbed]
         });
