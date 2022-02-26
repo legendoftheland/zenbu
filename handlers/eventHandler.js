@@ -1,16 +1,16 @@
-const fs = require('fs');
-const client = require('../src/bot');
+const fs = require("fs");
+const client = require("../src/bot");
 
 module.exports = (client, Discord) => {
     const loadDir = (dirs) => {
-        const eventFiles = fs.readdirSync(`./events/${dirs}`).filter(file => file.endsWith('.js'));
+        const eventFiles = fs.readdirSync(`./events/${dirs}`).filter((file) => file.endsWith(".js"));
 
-        for(const file of eventFiles) {
+        for (const file of eventFiles) {
             const event = require(`../events/${dirs}/${file}`);
-            const eventName = file.split('.')[0]
+            const eventName = file.split(".")[1];
             client.on(eventName, event.bind(null, client, Discord));
         }
-    }
+    };
 
-    ['client', 'guild'].forEach(e => loadDir(e));
-}
+    ["client", "guild"].forEach((e) => loadDir(e));
+};

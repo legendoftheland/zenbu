@@ -1,11 +1,7 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { MessageEmbed } = require("discord.js");
 const client = require("../../src/bot");
-const {
-    MessageActionRow,
-    MessageSelectMenu,
-    MessageButton,
-} = require("discord.js");
+const { MessageActionRow, MessageSelectMenu, MessageButton } = require("discord.js");
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -49,21 +45,13 @@ module.exports = {
                 });
             } else {
                 const setup_typeRow = new MessageActionRow().addComponents(
-                    new MessageButton()
-                        .setCustomId("setup_email")
-                        .setLabel("E-mail 📧")
-                        .setStyle("PRIMARY"),
-                    new MessageButton()
-                        .setCustomId("setup_captcha")
-                        .setLabel("Captcha 🤖")
-                        .setStyle("PRIMARY")
+                    new MessageButton().setCustomId("setup_email").setLabel("E-mail 📧").setStyle("PRIMARY"),
+                    new MessageButton().setCustomId("setup_captcha").setLabel("Captcha 🤖").setStyle("PRIMARY")
                 );
                 const setup_stepOne_Type = new MessageEmbed()
                     .setColor("#FFC149")
                     .setTitle("Step 1: Set verification type")
-                    .setDescription(
-                        "Select one type of verification for this server by clicking one of the buttons below."
-                    );
+                    .setDescription("Select one type of verification for this server by clicking one of the buttons below.");
 
                 interaction.reply({
                     embeds: [setup_stepOne_Type],

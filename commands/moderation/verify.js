@@ -20,6 +20,9 @@ module.exports = {
         ),
     async execute(interaction) {
         const verificationCode = randomInt(100000, 999999);
+
+        var domain = interaction.options.getString("email").split("@")[1];
+
         var mailOptions = {
             from: `${interaction.guild.name} <zenbudiscordbot@gmail.com>`,
             to: `${interaction.options.getString("email")}`,
@@ -35,7 +38,10 @@ module.exports = {
             }
         });
 
-        var domain = interaction.options.getString("email").split("@")[1];
+        const verify_codeRow = new MessageActionRow().addComponents(
+            new MessageButton().setCustomId("verify_1").setLabel("1").setStyle("PRIMARY"),
+            new MessageButton().setCustomId("verify_2").setLabel("2").setStyle("PRIMARY")
+        );
 
         // if (domain === )
         // EMBEDS

@@ -82,7 +82,7 @@ module.exports = {
                     },
                     {
                         name: "Created At",
-                        value: `${userInFocus.createdAt}`,
+                        value: `<t:${Math.floor(userInFocus.createdTimestamp / 1000)}>`,
                         inline: false,
                     },
                     { name: "Type", value: `${userType}`, inline: false },
@@ -109,7 +109,7 @@ module.exports = {
                     },
                     {
                         name: "Joined At",
-                        value: `${memberInFocus.joinedAt}`,
+                        value: `<t:${Math.floor(memberInFocus.joinedTimestamp / 1000)}>`,
                         inline: false,
                     },
                     { name: "Roles", value: `${rolesList}`, inline: false }
@@ -143,8 +143,8 @@ module.exports = {
                         inline: true,
                     },
                     {
-                        name: "Uptime",
-                        value: `${uptimeH} hours,  ${uptimeMin} minutes`,
+                        name: "Last Ready",
+                        value: `<t:${Math.floor(client.readyTimestamp / 1000)}:R>`,
                         inline: true,
                     },
                     {

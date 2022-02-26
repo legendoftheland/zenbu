@@ -1,23 +1,15 @@
 const Guild = require("../../database/schemas/guildSchema.js");
 const { MessageEmbed } = require("discord.js");
-const {
-    MessageActionRow,
-    MessageSelectMenu,
-    MessageButton,
-} = require("discord.js");
+const { MessageActionRow, MessageSelectMenu, MessageButton } = require("discord.js");
 
 module.exports = async (client, Discord, interaction) => {
     if (interaction.isButton()) {
         if (interaction.customId === "setup_email") {
-            Guild.findByIdAndUpdate(
-                interaction.guild.id,
-                { verificationType: "email" },
-                (err) => {
-                    if (err) {
-                        console.log(err);
-                    }
+            Guild.findByIdAndUpdate(interaction.guild.id, { verificationType: "email" }, (err) => {
+                if (err) {
+                    console.log(err);
                 }
-            );
+            });
 
             const setup_stepTwoAlpha_Domain = new MessageEmbed()
                 .setColor("#FFC149")
@@ -28,21 +20,15 @@ module.exports = async (client, Discord, interaction) => {
 
             interaction.update({ embeds: [setup_stepTwoAlpha_Domain] });
         } else if (interaction.customId === "setup_captcha") {
-            Guild.findByIdAndUpdate(
-                interaction.guild.id,
-                { verificationType: "captcha" },
-                (err) => {
-                    if (err) {
-                        console.log(err);
-                    }
+            Guild.findByIdAndUpdate(interaction.guild.id, { verificationType: "captcha" }, (err) => {
+                if (err) {
+                    console.log(err);
                 }
-            );
+            });
 
             let setup_roleRowOptions = [];
             const guildRoles = await interaction.guild.roles.fetch();
-            const guildRolesFiltered = guildRoles.filter(
-                (role) => role.name !== "@everyone" && !role.managed
-            );
+            const guildRolesFiltered = guildRoles.filter((role) => role.name !== "@everyone" && !role.managed);
 
             if (guildRolesFiltered.size === 0) {
                 const setup_failure_noRoles = new MessageEmbed()
@@ -70,10 +56,7 @@ module.exports = async (client, Discord, interaction) => {
             console.log(guildRolesFiltered);
 
             const setup_roleRow = new MessageActionRow().addComponents(
-                new MessageSelectMenu()
-                    .setCustomId("setup_verifyRole")
-                    .setPlaceholder("Select a role")
-                    .addOptions(setup_roleRowOptions)
+                new MessageSelectMenu().setCustomId("setup_verifyRole").setPlaceholder("Select a role").addOptions(setup_roleRowOptions)
             );
 
             const setup_stepTwoBeta_Role = new MessageEmbed()
@@ -90,22 +73,16 @@ module.exports = async (client, Discord, interaction) => {
         }
     } else if (interaction.isSelectMenu()) {
         if (interaction.customId === "setup_verifyRole") {
-            Guild.findByIdAndUpdate(
-                interaction.guild.id,
-                { verificationRole: `${interaction.values[0]}` },
-                (err) => {
-                    if (err) {
-                        console.log(err);
-                    }
+            Guild.findByIdAndUpdate(interaction.guild.id, { verificationRole: `${interaction.values[0]}` }, (err) => {
+                if (err) {
+                    console.log(err);
                 }
-            );
+            });
 
             const setup_stepTwoBeta_Role = new MessageEmbed()
                 .setColor("#00E209")
                 .setTitle("Verification set up")
-                .setDescription(
-                    "The verification system for your server has been successfully set up!"
-                );
+                .setDescription("The verification system for your server has been successfully set up!");
 
             interaction.update({
                 embeds: [setup_stepTwoBeta_Role],
